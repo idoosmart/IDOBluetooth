@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IDOBluetooth'
-  s.version          = '3.4.1'
+  s.version          = '3.4.2'
   s.summary          = 'IDOBluetooth is dependent on the IDOBlueProtocol, so before using the Bluetooth management library, the bluetooth protocol library will be piloted into.'
 
 # This description is used to generate tags and improve search results.
@@ -41,5 +41,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
     s.frameworks = 'UIKit', 'Foundation', 'CoreBluetooth'
   # s.dependency 'AFNetworking', '~> 2.3'
-    s.dependency 'IDOBlueProtocol' 
+    s.dependency 'IDOBlueProtocol'
 end
