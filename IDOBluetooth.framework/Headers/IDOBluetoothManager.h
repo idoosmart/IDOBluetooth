@@ -69,7 +69,7 @@
 @property (nonatomic,weak) id<IDOBluetoothManagerDelegate> delegate;
 
 /**
- * 自动扫描连接超时时长 默认 20
+ * 自动扫描连接、手动扫描连接超时时长 默认 20
  * Auto Scan Connection Timeout Duration Default 20
  */
 @property (nonatomic,assign) NSInteger timeout;
