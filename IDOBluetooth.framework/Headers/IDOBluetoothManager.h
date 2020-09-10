@@ -59,6 +59,13 @@
 - (void)bluetoothManager:(IDOBluetoothManager *)manager
   connectPeripheralError:(NSError *)error;
 
+@optional
+/**
+ * @brief  发现服务特征或服务超时是否重新启动扫描
+ * @return 是或否 默认是yes | yes or no
+ */
+- (BOOL)discoverCharacteristicsOrServiceTimeoutRestartScan;
+
 @end
 
 @interface IDOBluetoothManager : NSObject
@@ -91,6 +98,12 @@
  * Whether a reconnect mechanism is required,if NO set,connection will not be reconnected
  */
 @property (nonatomic,assign) BOOL isReconnect;
+
+/**
+ * 发现服务特征或服务超时是否重新启动扫描 默认 yes
+ * discover service timout restart scan default yes
+ */
+@property (nonatomic,assign) BOOL isDiscoverServiceTimeoutRestartScan;
 
 /**
  * 设置扫描间隔时长 默认 10秒 如果不启动超时间隔扫描，则无效
