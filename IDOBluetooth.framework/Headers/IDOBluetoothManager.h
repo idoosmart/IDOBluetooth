@@ -59,13 +59,6 @@
 - (void)bluetoothManager:(IDOBluetoothManager *)manager
   connectPeripheralError:(NSError *)error;
 
-@optional
-/**
- * @brief  发现服务特征或服务超时是否重新启动扫描
- * @return 是或否 默认是yes | yes or no
- */
-- (BOOL)discoverCharacteristicsOrServiceTimeoutRestartScan;
-
 @end
 
 @interface IDOBluetoothManager : NSObject
@@ -100,10 +93,17 @@
 @property (nonatomic,assign) BOOL isReconnect;
 
 /**
- * 发现服务特征或服务超时是否重新启动扫描 默认 yes
- * discover service timout restart scan default yes
+ * 强制切换手动模式扫描连接,当需要再次添加绑定设备时使用
+ * mandatory manual scan connect device 
  */
-@property (nonatomic,assign) BOOL isDiscoverServiceTimeoutRestartScan;
+@property (nonatomic,assign) BOOL isMandatoryManual;
+
+/**
+ * 切换设备是否在内部执行检测加密授权码,默认YES,在切换设备重连时不要在内部检测,在外部执行检测
+ * Whether the switching device performs detection of encryption authorization code internally, the default is YES.
+ * When the switching device is reconnected, do not perform detection internally, but perform detection externally
+ */
+@property (nonatomic,assign) BOOL isDetectionAuthCode;
 
 /**
  * 设置扫描间隔时长 默认 10秒 如果不启动超时间隔扫描，则无效
