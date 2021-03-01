@@ -218,7 +218,19 @@ typedef NS_ENUM(NSInteger, IDO_BLUETOOTH_CONNECT_ERROR_TYPE) {
      * 蓝牙配对异常
      * Peer removed pairing information
      */
-    IDO_BLUETOOTH_PAIRING_ERROR_TYPE = 16
+    IDO_BLUETOOTH_PAIRING_ERROR_TYPE = 16,
+    
+    /**
+     * 蓝牙发现服务超时
+     * Bluetooth dicover service timeout
+     */
+    IDO_BLUETOOTH_DISCOVER_SERVICE_TIME_OUT_TYPE = 17,
+    
+    /**
+     * 蓝牙发现特征超时
+     * Bluetooth dicover characteristics timeout
+     */
+    IDO_BLUETOOTH_DISCOVER_CHARACTERISTICS_TIME_OUT_TYPE = 18
     
 };
 
