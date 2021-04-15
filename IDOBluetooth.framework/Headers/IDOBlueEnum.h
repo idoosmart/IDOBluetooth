@@ -115,7 +115,14 @@ typedef NS_ENUM(NSInteger, IDO_BLUETOOTH_MANAGER_STATE) {
      * 手环断开连接
      * Bracelet dis connect
      */
-    IDO_MANAGER_STATE_DIS_CONNECT = 12
+    IDO_MANAGER_STATE_DIS_CONNECT = 12,
+    
+    /**
+     * 蓝牙权限未开启
+     * Bluetooth no open authorized
+     */
+    IDO_MANAGER_STATE_NO_OPEN_AUTHORIZED = 13,
+    
 };
 
 
@@ -230,7 +237,13 @@ typedef NS_ENUM(NSInteger, IDO_BLUETOOTH_CONNECT_ERROR_TYPE) {
      * 蓝牙发现特征超时
      * Bluetooth dicover characteristics timeout
      */
-    IDO_BLUETOOTH_DISCOVER_CHARACTERISTICS_TIME_OUT_TYPE = 18
+    IDO_BLUETOOTH_DISCOVER_CHARACTERISTICS_TIME_OUT_TYPE = 18,
+    
+    /**
+     * 尝试连接超时
+     * Try connect device timeout
+     */
+    IDO_BLUETOOTH_TRY_CONNECT_DEIVCIE_TIMEOUT_TYPE = 19
     
 };
 
