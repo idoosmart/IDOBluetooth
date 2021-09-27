@@ -123,6 +123,12 @@ typedef NS_ENUM(NSInteger, IDO_BLUETOOTH_MANAGER_STATE) {
      */
     IDO_MANAGER_STATE_NO_OPEN_AUTHORIZED = 13,
     
+    /**
+     * 用户主动发起断线
+     * User initiates disconnection
+     */
+    IDO_MANAGER_STATE_INITIATIVE_DISCONNECT = 14
+    
 };
 
 
@@ -243,7 +249,12 @@ typedef NS_ENUM(NSInteger, IDO_BLUETOOTH_CONNECT_ERROR_TYPE) {
      * 尝试连接超时
      * Try connect device timeout
      */
-    IDO_BLUETOOTH_TRY_CONNECT_DEIVCIE_TIMEOUT_TYPE = 19
+    IDO_BLUETOOTH_TRY_CONNECT_DEIVCIE_TIMEOUT_TYPE = 19,
+    /**
+     * 尝试连接超时
+     * Try connect device timeout
+     */
+    IDO_BLUETOOTH_DATA_WRITE_INSUFFICIENT_TYPE = 20
     
 };
 
