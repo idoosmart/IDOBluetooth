@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IDOBluetooth'
-  s.version          = '3.11.8'
+  s.version          = '3.12.2'
   s.summary          = 'IDOBluetooth is dependent on the IDOBlueProtocol, so before using the Bluetooth management library, the bluetooth protocol library will be piloted into.'
 
 # This description is used to generate tags and improve search results.
