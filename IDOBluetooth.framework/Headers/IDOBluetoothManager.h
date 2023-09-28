@@ -113,6 +113,12 @@
 @property (nonatomic,assign) NSInteger autoScanInterval;
 
 /**
+ * 每次都打印扫描mac地址,默认NO，如果设置为YES，打印的log相对比较多
+ * Print and scan the mac address every time. The default is NO. If it is set to YES, the number of logs printed is relatively large
+ */
+@property (nonatomic,assign) BOOL isPrintScanMacAddressEveryTime;
+
+/**
  蓝牙扫描设备模式 | Bluetooth Scanning Device Mode
  */
 @property (nonatomic,assign,readonly) IDO_SCAN_DEVICE_MODE scanMode;

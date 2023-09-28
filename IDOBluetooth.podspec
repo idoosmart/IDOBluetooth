@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IDOBluetooth'
-  s.version          = '3.13.18'
+  s.version          = '3.13.23'
   s.summary          = 'IDOBluetooth is dependent on the IDOBlueProtocol, so before using the Bluetooth management library, the bluetooth protocol library will be piloted into.'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/idoosmart/IDOBluetooth.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
   
   # 上传framewrok
   s.vendored_frameworks   = 'IDOBluetooth.framework'
