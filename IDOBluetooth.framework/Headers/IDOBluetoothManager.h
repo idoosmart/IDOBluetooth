@@ -107,6 +107,11 @@
 @property (nonatomic,assign) BOOL isDetectionAuthCode;
 
 /**
+ * 是否连接系统列表设备获取MAC地址 默认 YES
+ */
+@property (nonatomic,assign) BOOL isGetSystemListDeviceMacAddress;
+
+/**
  * 设置扫描间隔时长 默认 10秒 如果不启动超时间隔扫描，则无效
  * Set the scan interval to 10 seconds by default.if timeout interval scanning is not started, it is not valid.
  */
