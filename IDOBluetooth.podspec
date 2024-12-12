@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IDOBluetooth'
-  s.version          = '3.13.31'
+  s.version          = '3.13.32'
   s.summary          = 'IDOBluetooth is dependent on the IDOBlueProtocol, so before using the Bluetooth management library, the bluetooth protocol library will be piloted into.'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   
   # 上传framewrok
-  s.vendored_frameworks   = 'IDOBluetooth.framework'
+  s.vendored_frameworks   = 'IDOBluetooth.xcframework'
 
   # 上传源文件
   # s.source_files = 'IDOBlueUpdate/Classes/**/*'
